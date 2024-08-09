@@ -1,4 +1,5 @@
-let task = JSON.parse(localStorage.getItem('task')) || [];
+// Lista de tareas
+let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
 //Función para agregar tareas
 export const addTask = (task) => {
@@ -7,9 +8,9 @@ export const addTask = (task) => {
         text: task,
         completed: false,
     };
-    task.push(newTask);
-    localStorage.setItem('task'), JSON.strigift(task));
+    tasks.push(newTask);
+    localStorage.setItem('tasks', JSON.stringify (tasks));
 };
 
 //Funció para poder traer la lista de tareas
-export const getTask = () => task;
+export const getTasks = () => tasks;
