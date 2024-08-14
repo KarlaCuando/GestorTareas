@@ -59,7 +59,7 @@ body {
  }
 
  /*Estilos para el elemento completado de la lista*/
-li.complated {
+li.completed {
     text-decoration: line-through;
     color: #888;
 }
